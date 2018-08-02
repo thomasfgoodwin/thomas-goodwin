@@ -2,3 +2,7 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+build-push.bat
+_excludes/
+s3_website.yml
+

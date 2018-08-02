@@ -1,0 +1,123 @@
+---
+layout: null
+title: "Thomas F. Goodwin"
+description: Home page description
+sitemap:
+    priority: 1.0
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+
+					<div id="intro">
+                <div id="intro text">
+                <h1>{{site.title}}</h1>
+                <p>Tech Ergonomist. Lighting & Projection Designer. Audio Engineer.
+                   3D Artist. Photographer. Musician.
+                   </p>
+						    <h2>I listen, I amplify, and I illuminate</p>
+               </div>
+
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+            <ul class="icons">
+							<li><a href="https://instagram.com/{{site.instagram}}" class="icons"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://vimeo.com/{{site.vimeo}}" class="fab fa-vimeo-v strong"></i></a></li>
+							<li><a href="https://youtube.com/user/{{site.youtube}}" class="fab fa-youtube-square strong"></i></a></li>
+							<li><a href="https://soundcloud.com/{{site.soundcloud}}" class="fab fa-soundcloud strong"></i></a></li>
+              <li><a href="https://patreon.com/{{site.patreon}}" class="fab fa-patreon"></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">Welcome</h2>
+                  <p>As this site fills with content, you'll see musings on acoustics, cognitive psychology, media & communications, architecture, and much more. Check back soon, and be sure to follow me on your platforms of choice</p>
+								</header>
+                								<a class="image main"><img src="{{ "/images/ModuleDetailnew.svg" | absolute_url }}" alt="" /></a>
+                                <h2>{{ page.tag }}</h2>
+                                <ul class="actions">
+                                {% for post in page.posts %}
+                                  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
+                                {% endfor %}
+                                </ul>
+
+                                <h1>Tags:</h1><div id="tag-cloud">
+                                  <h3>{{ site | tag_cloud }}</h3>
+                                </div>
+							</article>
+
+						<!-- Posts -->
+            <h1 class="recent-title">Recent Posts:</h1>
+							<section class="posts">
+
+                {% for post in site.posts limit:6 %}
+                {% assign mod3 = forloop.index | modulo: 6 %}
+  								<article>
+  									<header>
+  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+  									</header>
+  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  									<p>{{ post.excerpt }}</p>
+  									<ul class="actions">
+  										<li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
+  									</ul>
+  								</article>
+                  {% if mod3 == 0 %}
+
+                  {% endif %}
+                {% endfor %}
+
+							</section>
+
+						<!-- Footer -->
+							<footer>
+                <ul class="actions">
+                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">Blog</a></li>
+                </ul>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+    {% include tracking.html %}
+
+	</body>
+</html>

@@ -1,0 +1,78 @@
+# Site
+title:              Thomas F. Goodwin
+bio:                'Audiovisual Designer, Researcher and Artist'
+description:        "Audiovisual Designer, Researcher and Artist"
+locale:             en_US
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "thomasfgoodwin.com" # the base hostname & protocol for your site
+
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
+    image: "images/Asset_01.png"
+
+
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+tag_page_data:
+  sitemap: false
+tag_page_layout: tag_page
+tag_page_dir: tags
+tag_permalink_style: pretty
+
+# Comments
+disqus_shortname:   thomasfgoodwin
+
+# Social
+analytics-id:       "default"
+soundcloud:         "jester-fjord"
+facebook:           "thomasfgoodwin"
+instagram:          "jesterfjord"
+vimeo:              "thomasfgoodwin"
+youtube:            "zimmermanstudios"
+linkedin:           "thomasgoodwinav"
+twitter:            "zimmermanstudio"
+patreon:            "thomasfgoodwin"
+
+# personal
+location:           Denver, CO
+phone:              (719) 581-9693
+email:              zimmermanstudios@gmail.com
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-font-awesome-sass
+  - font-awesome-sass
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+jekyll-mentions:
+    base_url: https://github.com
+
+
+
+# Exclude list
+exclude: [build-push.bat, README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old, _excludes/, s3_website]

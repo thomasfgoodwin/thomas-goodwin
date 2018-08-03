@@ -2431,7 +2431,7 @@ ul:nav a:hover, a:visited, a:link, a:active
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -4400,7 +4400,7 @@ ul:nav a:hover, a:visited, a:link, a:active
 		#navPanelToggle:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: "fontawesome";
+			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;

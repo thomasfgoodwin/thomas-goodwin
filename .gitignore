@@ -5,4 +5,5 @@ _site/
 build-push.bat
 _excludes/
 s3_website.yml
+_drafts/
 

@@ -3522,12 +3522,10 @@ ul:nav a:hover, a:visited, a:link, a:active
 		}
 
 		#nav ul.icons.alt li .icon:before {
-							text-shadow: none;
 			box-shadow: inset 0 0 0 2px #ffffff;
 		}
 
 		#nav ul.icons.alt li a.icon:hover:before {
-							text-shadow: none;
 			box-shadow: inset 0 0 0 2px #18bfef;
 		}
 
@@ -4009,19 +4007,16 @@ ul:nav a:hover, a:visited, a:link, a:active
 		}
 
 		#footer ul.icons li a.icon:hover:before {
-							text-shadow: none;
 			color: #18bfef;
 			text-decoration: none;
 		}
 
 		#footer ul.icons.alt li .icon:before {
-							text-shadow: none;
 			box-shadow: inset 0 0 0 2px #e2e2e2;
 			text-decoration: none;
 		}
 
 		#footer ul.icons.alt li a.icon:hover:before {
-							text-shadow: none;
 			box-shadow: inset 0 0 0 2px #18bfef;
 			text-decoration: none;
 		}

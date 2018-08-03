@@ -7,6 +7,8 @@
 /* Footer */
 
 	#footer {
+		@include fa-icon;
+	  @extend .fas;
 		@include color(alt);
 		@include vendor('display', 'flex');
 		background-color: _palette(alt, bg);

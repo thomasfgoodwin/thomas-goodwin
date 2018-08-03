@@ -1,3 +1,12 @@
+---
+layout: tag_page
+title: "Thomas F. Goodwin"
+description: Home page description
+sitemap:
+    priority: 1.0
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
 <!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
@@ -38,21 +47,26 @@
 				<div id="main">
 
 					<!-- Post -->
-					<section>
+
 
           <!-- Tags -->
-              <h2>{{ page.tag }}</h2>
-              <ul>
-              {% for post in page.posts %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
-              {% endfor %}
-              </ul>
+          <article class="post featured"
+							<header class="major">
+							  	<h1>{{ page.tag }}</h1>
+							</header>
+              <ul class="tag-posts">
+							    {% for post in page.posts %}
+                  <p><li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})
+									</li></p>
+                  {% endfor %}
+                  </ul>
+							<h1>All Tags:</h1><div id="tag-cloud">
+								<h3>{{ site | tag_cloud }}</h3>
+							</p>
+               </div>
+						 </article>
 
-              <div id="tag-cloud">
-                {{ site | tag_cloud }}
-             </div>
 
-           </section>
 
            <!-- Footer -->
              <footer>

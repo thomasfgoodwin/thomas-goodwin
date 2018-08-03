@@ -2534,10 +2534,16 @@ ul:nav a:hover, a:visited, a:link, a:active
 		}
 
 /* List */
-  ul#post-tags li{
+  ul.post-tags{
 		 display:inline;
 		 text-transform: uppercase;
 		 font-family: inherit;
+	}
+	ul.tag-posts{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 	}
 	ol {
 		list-style: decimal;

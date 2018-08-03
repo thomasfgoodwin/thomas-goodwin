@@ -4,6 +4,7 @@ _site/
 .jekyll-metadata
 build-push.bat
 _excludes/
+_posts/
 s3_website.yml
 _drafts/
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Tech Cube + Tutorial"
 permalink: "/techcube/"
 date:   "2018-08-02"
-excerpt: "Tech Cube, 2017, animation"
+excerpt: "Tech Cube, 2017, animation, w/ included tutorial"
 image: "/images/TechCubethumbnail.jpg"
 tags: "projects animations tutorials"
 ---

@@ -75,4 +75,4 @@ jekyll-mentions:
 
 
 # Exclude list
-exclude: [build-push.bat, README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old, _excludes/, s3_website]
+exclude: [build-push.bat, README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old, _excludes/, s3_website, .git/]

@@ -54,17 +54,26 @@ sitemap:
 							<header class="major">
 							  	<h1>{{ page.tag }}</h1>
 							</header>
-              <ul class="tag-posts">
+              <section class="posts">
 							    {% for post in page.posts %}
-                  <p><li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})
-									</li></p>
+									<article>
+
+  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+  									
+  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  									<p>{{ post.excerpt }}</p>
+  									<ul class="actions">
+  										<li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
+  									</ul>
+  								</article>
                   {% endfor %}
-                  </ul>
-							<h1>All Tags:</h1><div id="tag-cloud">
+							</section>
+							<article>
+								<h1>All Tags:</h1><div id="tag-cloud">
 								<h3>{{ site | tag_cloud }}</h3>
-							</p>
+
                </div>
-						 </article>
+						  </article>
 
 
 

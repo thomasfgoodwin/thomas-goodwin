@@ -38,7 +38,7 @@
 				<!-- Main -->
 				<div id="main">
 
-          <article class="post featured">
+          <article class="post featured" style="padding-bottom: 0">
             <header class="major">
 							<div id="tag-cloud">
 								<h1>All Tags:</h1>
@@ -47,6 +47,7 @@
 
           </article>
 					<!-- Post -->
+					 <h1 class="recent-title">Recent Posts:</h1>
 					<section class="posts">
 						{% for post in site.posts %}
 						{% assign mod3 = forloop.index | modulo: 3 %}

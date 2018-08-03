@@ -50,35 +50,41 @@ sitemap:
 
 
           <!-- Tags -->
-          <article class="post featured"
-							<header class="major">
-							  	<h1>{{ page.tag }}</h1>
-							</header>
-              <section class="posts">
-							    {% for post in page.posts %}
-									<article>
 
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-  									
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
-  									</ul>
-  								</article>
+          <article class="post featured" style="padding-bottom: 0">
+              <header class="major">
+                  <div id="tag-title"><h4 class="tag-title" style="margin: 0 0 0 0">Posts in</h4></div>
+							  	<h1>{{ page.tag }}:</h1>
+                </header>
+              </article>
+
+                <section class="posts">
+							    {% for post in page.posts limit:6 %}
+                  {% assign mod3 = forloop.index | modulo: 6 %}
+  								 <article>
+    									<header>
+                        <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+                      </header>
+    									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+    									<p>{{ post.excerpt }}</p>
+    									<ul class="actions">
+    										<li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
+    									</ul>
+    								</article>
+                    {% if mod3 == 0 %}
+
+                    {% endif %}
                   {% endfor %}
+
 							</section>
-							<article>
-								<h1>All Tags:</h1><div id="tag-cloud">
-								<h3>{{ site | tag_cloud }}</h3>
-
-               </div>
-						  </article>
-
-
 
            <!-- Footer -->
              <footer>
+
+                 <h1>All Tags:</h1><div id="tag-cloud">
+                 <h3>{{ site | tag_cloud }}</h3>
+
+
                <ul class="actions">
                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">Blog</a></li>
                </ul>

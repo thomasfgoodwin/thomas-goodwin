@@ -2,7 +2,8 @@
 layout: post
 title:  "One Deeper"
 permalink: "/one-deeper/"
-date:   "2017-02-20"
+date: "2018-07-21"
+altdate:   "2017-02-20"
 excerpt: "There are beers and spiked mates. There are handrolled cigarettes and the smell of burning marijuana. There are unnaturally dialated pupils, and there is dancing."
 image: "/images/energie_02.jpg"
 tags: "other"

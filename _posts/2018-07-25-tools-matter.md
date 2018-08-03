@@ -2,7 +2,7 @@
 layout: post
 title:  "Tools Matter"
 permalink: "/tools-matter/"
-date:   "2018-07-25"
+date:   "2018-07-15"
 excerpt: "Why a sufficient computer really is a necessity for digital art"
 image: "/images/desktop.jpg"
 tags: "tech articles other"

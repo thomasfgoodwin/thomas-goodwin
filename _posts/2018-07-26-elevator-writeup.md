@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Elevator"
+title:  "Elevator + Tutorial"
 permalink: "/elevator-writeup/"
 date:   "2018-07-25"
 excerpt: "Elevator, 2018, digital environment + animation. UPDATE: Tutorial added."

@@ -21,4 +21,9 @@ Conceptually this is a portrait of negative space: what isn't shown is the most 
 One of the main takeaways from this project was just how useful having structured, thoughtful asset and project management policies in place can be. In working on this I managed to retain the ability to edit almost all of the objects without breaking the link to the final scene. This sounds straightforward, and really it is, but it's tough to maintain the discipline it takes when working by yourself and for yourself. It's also pretty tough to work on a project this size if you _haven't_ been diligent with the boring things, however, so I think I will find it easier going forward now that I've seen the other side.
 
 ### Tutorial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u_zUrr1QxWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u_zUrr1QxWM"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Here is the formula for the *external* angles of a regular polygon:
+```180 - [((n-2)*180) / n]```
+where n= the number of vertices of your polygon

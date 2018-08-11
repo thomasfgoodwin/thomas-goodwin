@@ -3104,10 +3104,10 @@ ul:nav a:hover, a:visited, a:link, a:active
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
+			-moz-transition: opacity .3s ease-in-out;
+			-webkit-transition: opacity .3s ease-in-out;
+			-ms-transition: opacity .3s ease-in-out;
+			transition: opacity .3s ease-in-out;
 			-moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
@@ -3156,10 +3156,11 @@ ul:nav a:hover, a:visited, a:link, a:active
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
-		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-		transition: opacity 1s ease, transform 1s ease;
+		-moz-transition: opacity .3s ease, -moz-transform .3s ease;
+		-webkit-transition: opacity .3s ease, -webkit-transform .3s ease;
+		-ms-transition: opacity .3s ease, -ms-transform .3s ease;
+		transition: opacity .3s ease, transform .3s ease;
+
 		position: relative;
 		cursor: default;
 		text-align: center;
@@ -3438,9 +3439,17 @@ ul:nav a:hover, a:visited, a:link, a:active
 			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s, text-shadow 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s, text-shadow 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s, text-shadow 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+			-webkit-transition: .3s -webkit-filter linear;
+			-moz-transition: .3s -moz-filter linear;
+			-moz-transition: .3s filter linear;
+			-ms-transition: .3s -ms-filter linear;
+			-o-transition: .3s -o-filter linear;
+			transition: .3s filter linear, .3s -webkit-filter linear;
+
 			-moz-pointer-events: auto;
 			-webkit-pointer-events: auto;
 			-ms-pointer-events: auto;
+
 			pointer-events: auto;
 			border-style: solid;
 			border-color: #ffffff;
@@ -3464,12 +3473,37 @@ ul:nav a:hover, a:visited, a:link, a:active
 				box-shadow: 0px 0px 2px #18bfef;
 
 			}
-			#header .logo.shadow {
-    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
-    -webkit-filter: drop-shadow( -5px -5px 5px #000 );
-            filter: drop-shadow( -5px -5px 5px #000 );
-}
+			#header .logo img{
+				border-style: none;
+				padding-bottom: 1rem;
+				max-width: 512px;
+				filter: drop-shadow( 0px 0px 6px #ffffff );
 
+	}
+			#header .logo img:hover{
+				filter: drop-shadow( 0px 0px 8px #18bfef );
+			}
+
+			#intro .logo img{
+				-webkit-transition: .3s -webkit-filter linear;
+				-moz-transition: .3s -moz-filter linear;
+				-moz-transition: .3s filter linear;
+				-ms-transition: .3s -ms-filter linear;
+				-o-transition: .3s -o-filter linear;
+				transition: .3s filter linear, .3s -webkit-filter linear;
+
+				-moz-pointer-events: auto;
+				-webkit-pointer-events: auto;
+				-ms-pointer-events: auto;
+
+				padding-bottom: 3rem;
+				max-width: 512px;
+        filter: drop-shadow( 0px 0px 6px #ffffff );
+}
+			#intro .logo img:hover{
+
+				filter: drop-shadow( 0px 0px 8px #18bfef );
+			}
 		@media screen and (max-width: 980px) {
 
 			#header {

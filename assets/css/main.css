@@ -3511,7 +3511,7 @@ ul:nav a:hover, a:visited, a:link, a:active
 				-ms-transition: .3s -ms-filter linear;
 				-o-transition: .3s -o-filter linear;
 				transition: .3s filter linear, .3s -webkit-filter linear;
-
+				padding-bottom: .5rem;
 				-moz-pointer-events: auto;
 				-webkit-pointer-events: auto;
 				-ms-pointer-events: auto;

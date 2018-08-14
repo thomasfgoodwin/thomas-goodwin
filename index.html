@@ -29,7 +29,7 @@ sitemap:
 
 					<div id="intro">
                 <div id="intro text">
-                <h1>{{site.title}}</h1>
+                <h1><a href="{{ "/" | absolute_url }}" class="logo"><img src="/images/Logo-Rounded_Palette.svg" class="logo"><br/>{{site.title}}</a></h1>
                 <p>Tech Ergonomist. Lighting & Projection Designer. Audio Engineer.
                    3D Artist. Photographer. Musician.
                    </p>
@@ -40,7 +40,8 @@ sitemap:
 
 				<!-- Header -->
 					<header id="header">
-						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+						<a href="{{ "/" | absolute_url }}" class="logo"> {{site.title}}
+             </a>
 					</header>
 
 				<!-- Nav -->
